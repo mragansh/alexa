@@ -1,0 +1,19 @@
+{
+  "deploy_settings": {
+    "default": {
+      "skill_id": "amzn1.ask.skill.1db95218-382c-40bc-a1d1-82b8c0fba33d",
+      "was_cloned": false,
+      "merge": {
+        "manifest": {
+          "apis": {
+            "custom": {
+              "endpoint": {
+                "uri": "ask-custom-new-skill-codepipeline-default"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+service: api-service-appSync
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+functions:
+  getGraphQLData:
+    handler: handler.handler
+
+plugins:
+  - serverless-appsync-plugin
+custom:
+  accountId: 747667098506
+  appSync:
+    name: api-by-serverless
+    # apiId # only required for update-appsync
+    authenticationType: API_KEY # API_KEY is also supported
+    # userPoolConfig:
+    #   awsRegion: us-east-1 # required # region
+    #   defaultAction: ALLOW
+    #   userPoolId: arn:aws:iam::747667098506:user/mragansh.tomar@globallogic.com # replace this with your Cognito User Pool Id
+    # region: # defaults to provider region
+    # mappingTemplatesLocation: # defaults to mapping-templates
+    mappingTemplates:
+      - dataSource: Lambda
+        type: Query
+        field: getAllDataFromXMLRSS
+        request: "getAllDataFromXMLRSS-request-mapping-template.txt"
+        response: "getAllDataFromXMLRSS-response-mapping-template.txt"
+    serviceRole: "AppSyncServiceRole"
+    dataSources:
+      - type: AWS_LAMBDA
+        name: Lambda
+        description: 'Lambda DataSource'
+        config:
+          lambdaFunctionArn: { Fn::GetAtt: [GraphqlLambdaFunction, Arn] }
+          serviceRoleArn: { Fn::GetAtt: [AppSyncLambdaServiceRole, Arn] }
+

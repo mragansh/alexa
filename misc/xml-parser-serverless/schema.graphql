@@ -1,0 +1,22 @@
+type Query {
+	getAllDataFromXMLRSS(size: Int!): [xmlDataRssFeed]
+	getDataByTopics(size: Int!, topic: String!): [topics]
+}
+
+schema {
+	query: Query
+}
+
+type topics {
+	id: ID!
+	item: String
+	audio: String
+	title: String
+}
+
+type xmlDataRssFeed {
+	id: ID!
+	title: String
+	enclosure: String
+	desc: String
+}

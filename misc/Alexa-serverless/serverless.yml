@@ -1,0 +1,23 @@
+service: graphQL-query
+provider:
+  name: aws
+  runtime: nodejs6.10
+functions:
+  getGraphQLData:
+    handler: lemdaHandlers.getDataByDate
+    events:
+     - http:
+         path: getDataByDate
+         method: get
+  getGraphQLDataByText:
+    handler: lemdaHandlers.getDataByDateAndText
+    events:
+     - http:
+         path: getDataByDateAndText/{query}
+         method: get
+  getDataByTopic:
+    handler: lemdaHandlers.getDataByTopic
+    events:
+     - http:
+         path: getDataByTopic/{query}
+         method: get

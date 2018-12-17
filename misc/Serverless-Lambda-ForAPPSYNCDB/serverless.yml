@@ -1,0 +1,11 @@
+service: api-db-dev
+provider:
+  name: aws
+  runtime: nodejs6.10
+functions:
+  getGraphQLData:
+    handler: handler.handler
+    events:
+     - http:
+         path: getMainTopic
+         method: get

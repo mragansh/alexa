@@ -1,0 +1,15 @@
+{
+  "name": "crud-operation-serverless-lembda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mragansh",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.240.1",
+    "graphql": "^0.13.2"
+  }
+}

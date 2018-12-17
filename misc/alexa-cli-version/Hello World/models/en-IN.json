@@ -1,0 +1,60 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "eco device",
+      "types": [],
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cancel"
+          ]
+        },
+        {
+          "name": "getIdIntent",
+          "slots": [
+            {
+              "name": "idNumber",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "my id is {idNumber}",
+            "{idNumber}",
+            "id is {idNumber}"
+          ]
+        },
+        {
+          "name": "goAheadIntent",
+          "samples": [
+            "go ahead"
+          ]
+        },
+        {
+          "name":"orderFoodByMenu",
+          "slots": [
+            {
+              "name": "dish",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "samples":[
+            "order {dish}"
+          ]
+        },       
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "help"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "stop"
+          ]
+        }        
+      ]
+    }
+  }
+}

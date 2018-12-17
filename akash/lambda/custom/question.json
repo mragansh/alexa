@@ -1,0 +1,50 @@
+{
+    "todayQuestion": {
+        "question": "What is Capital of India?",
+        "answer": "new delhi"
+    },
+    "quizQuestion": [
+        {
+            "question": "What is Capital of India?",
+            "answer": "New Delhi"
+        },
+        {
+            "question": "What is Capital of Uttar Pradesh?",
+            "answer": "Luckhnow"
+        },
+        {
+            "question": "What is Capital of Punjab?",
+            "answer": "Punjab"
+        },
+        {
+            "question": "What is Capital of Himachal Pradesh?",
+            "answer": "Shimla"
+        }
+    ],
+    "topic": {
+        "physics": {
+            "text": "Physics is one of the oldest academic disciplines and, through its inclusion of astronomy, perhaps the oldest. Over the last two millennia, physics, chemistry, biology, and certain branches of mathematics were a part of natural philosophy, but during the scientific revolution in the 17th century, these natural sciences emerged as unique research endeavors in their own right. Physics intersects with many interdisciplinary areas of research, such as biophysics and quantum chemistry, and the boundaries of physics are not rigidly defined. New ideas in physics often explain the fundamental mechanisms studied by other sciences and suggest new avenues of research in academic disciplines such as mathematics and philosophy."
+        },
+        "biology": {
+            "text": "Biology is the natural science that studies life and living organisms, including their physical structure, chemical processes, molecular interactions, physiological mechanisms, development and evolution. Despite the complexity of the science, there are certain unifying concepts that consolidate it into a single, coherent field. Biology recognizes the cell as the basic unit of life, genes as the basic unit of heredity, and evolution as the engine that propels the creation and extinction of species. Living organisms are open systems that survive by transforming energy and decreasing their local entropy to maintain a stable and vital condition defined as homeostasis."
+        },
+        "akash": {
+            "text": "Aakash Institute is one of the well known institutions in the country that provides comprehensive test preparatory services to students for preparation of medical entrance examinations. The Institute initially commenced operations in Delhi with a few students but with a vision of Mr J.C. Chaudhry, a prominent teacher and an educationist. Some of these students cracked the medical entrance exam securing top ranks making Aakash one of the sought after coaching institutes for preparation of medical entrance exams."
+        },
+        "waves have in common": {
+            "text": "When looking at sound, light, and even water waves, all waves contain energy. This energy is in the form of repetitive vibration, such as an up and down movement or a side to side movement. In any case, this energy can move from one spot to another, either through a medium like water or through a vacuum like space. Energy is measured by taking Planck's constant, which is 6.63 x 10 ^-34 J per second, and multiplying it by the frequency of the wave. Usually, the higher the frequency, the more energy the wave has. If the wave continues through a medium and the frequency becomes less and less, the energy becomes less and less."
+        },
+        "a marble": {
+            "text": "Marbles are often made with glass or plastic, and are usually lightweight and used as toys or for decoration. Moreover, 1 gm is equal to 0.035 ounces. Therefore, a 4 or 5 gm marble is 0.141 or 0.176 ounces."
+        },
+        "proof to second law of thermodynamics": {
+            "text": "Second law of thermodynamics usually happens and can be observe in real life. Since that is the case, there are a lot of proofs, which you can consider, for it. Some of those are: When you make a cup of coffee. You will notice how it will get colder until it reaches room temperature. You see, water or your coffee in this sense cannot spontaneously heat up. When you fart, it doesn't just stay in one place. It continuously spreads into the whole room. The reason behind it is how heat, gas particles and energy moves from high concentration areas to areas that has low concentration. And that is what the second law of thermodynamics is all about."
+        },
+        "object can accelerate": {
+            "text": "When we talk about acceleration, we're talking about a rate of change. Acceleration tells us how much an object's velocity has changed with respect to time, and its units are often given in m/s2. An object can accelerate in different ways, and the way it accelerates can also tell us what kind of acceleration is occurring."
+        },
+        "difference between stress and strength":{
+            "text":"Yield strength is the stress needed to be applied to the specimen in order to reach the yield point. For a given specimen, they are the same. The only difference being yield strength is a property of the material, whereas yield stress is just the amount of stress induced."
+        }
+    }
+}

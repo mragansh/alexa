@@ -1,0 +1,152 @@
+<html><head><meta charset="utf-8"/><title>AppSyncDataSources Lambda Unit Report</title><style type="text/css">html, body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	margin: 0;
+	padding: 0;
+	color: #333;
+}
+body {
+	padding: 1rem;
+	font-size: 0.85rem;
+}
+header {
+	display: flex;
+	align-items: center;
+}
+#title {
+	margin: 0;
+	flex-grow: 1;
+}
+#logo {
+	height: 4rem;
+}
+#timestamp {
+	font-weight: bold;
+	color: #666;
+	margin-bottom: 0.5rem;
+}
+#summary {
+	color: #999;
+	margin-bottom: 1rem;
+}
+.suite-info {
+	padding: 1rem;
+	background-color: #eee;
+	border-bottom: 2px solid #999;
+	color: #999;
+	display: flex;
+	align-items: center;
+}
+.suite-info .suite-path {
+	font-weight: bold;
+	word-break: break-all;
+	flex-grow: 1;
+}
+.suite-info .suite-time {
+	margin-left: 0.5rem;
+	padding: 0.2rem 0.3rem;
+	font-size: 0.75rem;
+}
+.suite-info .suite-time.warn {
+	background-color: #D8000C;
+	color: #fff;
+}
+.suite-table {
+	width: 100%;
+	font-size: 0.85rem;
+	margin-bottom: 1em;
+}
+.suite-table td {
+	padding: 0.5rem;
+}
+.suite-table tr.passed {
+	background-color: #DFF2BF;
+	color: #4F8A10;
+}
+.suite-table tr.pending {
+	background-color: #FEEFB3;
+	color: #9F6000;
+}
+.suite-table tr.failed {
+	background-color: #FFBABA;
+	color: #D8000C;
+}
+.suite-table td {
+	font-size: 0.85rem;
+	border-bottom: 1px solid #aaa;
+	vertical-align: top;
+}
+.suite-table td.suite {
+	font-weight: bold;
+	width: 20%;
+}
+.suite-table td.test {
+	font-style: italic;
+	width: 60%;
+}
+.suite-table td.test .failureMsg {
+	font-size: 1rem;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+.suite-table td.result {
+	width: 20%;
+	text-align: right;
+}
+
+/* CONSOLE LOGS */
+.suite-consolelog {
+	margin-bottom: 2rem;
+	padding: 1rem;
+	background-color: #efefef;
+}
+.suite-consolelog-header {
+	font-weight: bold;
+}
+.suite-consolelog-item {
+	padding: 0.5rem;
+}
+.suite-consolelog-item pre {
+	margin: 0;
+}
+.suite-consolelog-item-origin {
+	color: #777;
+	font-weight: bold;
+}
+.suite-consolelog-item-message {
+	color: #000;
+	font-size: 1rem;
+	padding: 0 0.5rem;
+}
+</style></head><header><h1 id="title">AppSyncDataSources Lambda Unit Report</h1></header><div id="metadata-container"><div id="timestamp">Start: 2018-09-14 11:59:23</div><div id="summary">
+				6 tests --
+				4 passed /
+				2 failed /
+				0 pending
+			</div></div><div class="suite-info"><div class="suite-path">D:\Server\Projects\CI-CD-AWS\clubbedFuntion\Branch-Version2\mobile-economist-voice\lambda\src\alexa-service\utility.test.js</div><div class="suite-time warn">21.645s</div></div><table class="suite-table" cellspacing="0" cellpadding="0"><tr class="passed"><td class="suite"/><td class="test">Get Data From XML RSS Feed getDataFromXml()<div class="failureMessages"/></td><td class="result">passed in 2.666s</td></tr><tr class="passed"><td class="suite"/><td class="test">Get Data From GraphQL Topic List getTopicQuery()<div class="failureMessages"/></td><td class="result">passed in 1.959s</td></tr><tr class="failed"><td class="suite"/><td class="test">Get Data From GraphQL Get TegID getTegID()<div class="failureMessages"><pre class="failureMsg">Error: expect(received).toEqual(expected)
+
+Expected value to equal:
+  "46h67r390uoqf2gb3lnq3jki3u72q8r3"
+Received:
+  null
+
+Difference:
+
+  Comparing two different types of values. Expected string but received null.
+    at callback (D:\Server\Projects\CI-CD-AWS\clubbedFuntion\Branch-Version2\mobile-economist-voice\lambda\src\alexa-service\utility.test.js:33:22)
+    at _utils_.getTopicQuery.then.topicObject (D:\Server\Projects\CI-CD-AWS\clubbedFuntion\Branch-Version2\mobile-economist-voice\lambda\src\alexa-service\utility.test.js:39:9)
+    at &lt;anonymous&gt;
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)</pre></div></td><td class="result">failed</td></tr><tr class="passed"><td class="suite"/><td class="test">Get Data From GraphQL Get Data By TegID getDataByTegID()<div class="failureMessages"/></td><td class="result">passed in 2.941s</td></tr><tr class="failed"><td class="suite"/><td class="test">Get Data From GraphQL By TopicDetail getDataFromGraphQLEconomist()<div class="failureMessages"><pre class="failureMsg">Timeout - Async callback was not invoked within the 5000ms timeout specified by jest.setTimeout.
+    at Spec (D:\Server\Projects\CI-CD-AWS\clubbedFuntion\Branch-Version2\mobile-economist-voice\lambda\src\alexa-service\node_modules\jest-jasmine2\build\jasmine\Spec.js:85:20)
+    at new Spec (D:\Server\Projects\CI-CD-AWS\clubbedFuntion\Branch-Version2\mobile-economist-voice\lambda\src\alexa-service\node_modules\jest-jasmine2\build\setup_jest_globals.js:77:16)
+    at specFactory (D:\Server\Projects\CI-CD-AWS\clubbedFuntion\Branch-Version2\mobile-economist-voice\lambda\src\alexa-service\node_modules\jest-jasmine2\build\jasmine\Env.js:378:20)
+    at Env.it (D:\Server\Projects\CI-CD-AWS\clubbedFuntion\Branch-Version2\mobile-economist-voice\lambda\src\alexa-service\node_modules\jest-jasmine2\build\jasmine\Env.js:440:20)
+    at Env.it (D:\Server\Projects\CI-CD-AWS\clubbedFuntion\Branch-Version2\mobile-economist-voice\lambda\src\alexa-service\node_modules\jest-jasmine2\build\jasmine_async.js:99:25)
+    at it (D:\Server\Projects\CI-CD-AWS\clubbedFuntion\Branch-Version2\mobile-economist-voice\lambda\src\alexa-service\node_modules\jest-jasmine2\build\jasmine\jasmine_light.js:108:21)
+    at Object.&lt;anonymous&gt; (D:\Server\Projects\CI-CD-AWS\clubbedFuntion\Branch-Version2\mobile-economist-voice\lambda\src\alexa-service\utility.test.js:60:1)
+    at Runtime._execModule (D:\Server\Projects\CI-CD-AWS\clubbedFuntion\Branch-Version2\mobile-economist-voice\lambda\src\alexa-service\node_modules\jest-runtime\build\index.js:694:13)
+    at Runtime.requireModule (D:\Server\Projects\CI-CD-AWS\clubbedFuntion\Branch-Version2\mobile-economist-voice\lambda\src\alexa-service\node_modules\jest-runtime\build\index.js:376:14)
+    at D:\Server\Projects\CI-CD-AWS\clubbedFuntion\Branch-Version2\mobile-economist-voice\lambda\src\alexa-service\node_modules\jest-jasmine2\build\index.js:129:13</pre></div></td><td class="result">failed</td></tr><tr class="passed"><td class="suite"/><td class="test">Get Data From GraphQL By TopicDetail getDataByTopics()<div class="failureMessages"/></td><td class="result">passed in 2.881s</td></tr></table></html>

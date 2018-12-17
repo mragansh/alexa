@@ -1,0 +1,131 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "education podcast",
+      "types": [
+        {
+          "name": "Education_AnswerType",
+          "values": [
+            {
+              "name": {
+                "value": "new delhi",
+                "synonyms": [
+                  "Goregon",
+                  "Luckhnow",
+                  "Punjab",
+                  "Shimla"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "AMAZON.SearchQuery",
+          "values": [{
+            "name": {
+              "value": "physics",
+              "synonyms": [
+                "science"
+              ]
+            }
+          }]
+        },
+        {
+          "name": "SearchTopic",
+          "values": [
+            {
+              "name": {
+                "value": "physics",
+                "synonyms": [
+                  "science"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "biology",
+                "synonyms": [
+                  "bio"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StartOverIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "slots": [],
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hello",
+            "say hello",
+            "say hello world"
+          ]
+        },
+        {
+          "name": "PlayquizIntent",
+          "slots": [],
+          "samples": [
+            "quiz",
+            "play quiz",
+            "say play quiz"
+          ]
+        },
+        {
+          "name": "SearchTopicIntent",
+          "slots": [
+            {
+              "name": "Query",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "samples": [
+            "Tell me {Query}",
+            "Search me {Query}",
+            "what is {Query}",
+            "what do {Query}",
+            "why do {Query}",
+            "why is {Query}",
+            "how is {Query}",
+            "how do {Query}"
+          ]
+        },
+        {
+          "name": "QuizAnswerCheckIntent",
+          "slots": [
+            {
+              "name": "answerTodayQuestion",
+              "type": "Education_AnswerType"
+            }
+          ],
+          "samples": [
+            "{answerTodayQuestion}",
+            "answer is {answerTodayQuestion}",
+            "answer {answerTodayQuestion}"
+          ]
+        }
+      ]
+    }
+  }
+}
