@@ -1,0 +1,8 @@
+{
+    "introText": {
+        "introSpeech": "Your are welcome to the sleep cycle assistant, i will assist you with sleep cycle and tell you timings to sleep and awake, so that you can be New Gen every morning.",
+        "intoMenu": " You can start by asking more about sleep cycle. Just say.. More on Sleep. Or Starightaway ask me, schedule a plan for tommorrow sleep. Just Say.. Plan Sleep."
+    },
+    "sleepMoreText": "Sleep is a naturally recurring state of mind and body, characterized by altered consciousness, relatively inhibited sensory activity, inhibition of nearly all voluntary muscles, and reduced interactions with surroundings.[1] It is distinguished from wakefulness by a decreased ability to react to stimuli, but more reactive than coma or disorders of consciousness, sleep displaying very different and active brain patterns. ",
+    "scheduleInentTigger": "Now if you want now scedule your sleep, Just Say.. Plan Sleep"
+}

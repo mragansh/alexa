@@ -1,0 +1,43 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "sleep schedule",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "help",
+            "please help"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "stop"            
+          ]
+        },
+        {
+          "name": "SleepMoreIntent",
+          "slots": [],
+          "samples": [
+            "More on Sleep",
+            "More Sleep",
+            "sleep more"
+          ]
+        },
+        {
+          "name": "PlanSleepIntent",
+          "slots": [],
+          "samples": [
+            "Plan Sleep",
+            "Plan my Sleep"            
+          ]
+        }
+      ]
+    }
+  }
+}
